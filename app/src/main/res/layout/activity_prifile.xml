@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrifileActivity">
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPasswordChange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPasswordChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="change password"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogout"
+        tools:layout_editor_absoluteX="72dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+
+        android:id="@+id/buttonLogout"
+        android:backgroundTint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="log out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="207dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
